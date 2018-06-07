@@ -1,0 +1,11 @@
+#cookie-notice {
+    position: fixed;
+    display: none;
+    z-index: 100;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
