@@ -3,7 +3,7 @@
     Plugin Name: Simple Cookie Notice
     Plugin URI:
     Description: Display a simple Bootstrap-styled cookie notice message for users to accept or view your privacy and cookie info.
-    Author: jakecausier
+    Author: Jake Causier
     Author URI: https://github.com/jakecausier
     Version: 0.3
     Text Domain: simple-cookie-notice

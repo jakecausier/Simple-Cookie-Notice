@@ -7,7 +7,7 @@
                 </div>
                 <div class="col-12 col-md-3 text-center">
                     <a class="btn btn-<?php echo (scn_get_option('cookie_notice_btn_policy_color')) ?> btn-block" href="<?php echo scn_get_option('cookie_notice_btn_policy_link') ?: '/privacy-policy' ?>"><?php echo (scn_get_option('cookie_notice_btn_policy_text')) ?: 'View policy' ?></a>
-                    <a class="btn btn-<?php echo (scn_get_option('cookie_notice_btn_accept_color')) ?> btn-block" id="cookie-notice-accept"><?php echo (scn_get_option('cookie_notice_btn_accept_text')) ?: 'Accept' ?></a>
+                    <a class="btn btn-<?php echo (scn_get_option('cookie_notice_btn_accept_color')) ?> btn-block" href="#" id="cookie-notice-accept"><?php echo (scn_get_option('cookie_notice_btn_accept_text')) ?: 'Accept' ?></a>
                 </div>
             </div>
         </div>
