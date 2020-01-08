@@ -94,44 +94,6 @@ function scn_cookie_notice_settings_metabox() {
                 ),
             ) );
 
-			$cmb_options->add_field( array(
-				'name' => __( 'Accept Button Color', 'scn' ),
-				'desc' => __( 'Set the color for the Accept button. Color reference: <a href="https://getbootstrap.com/docs/4.1/utilities/colors/#background-color" target="_blank">Bootstrap Colors</a>', 'scn' ),
-				'id'   => 'cookie_notice_btn_accept_color',
-				'type'             => 'select',
-				'show_option_none' => false,
-				'default'          => 'info',
-				'options'          => array(
-					'primary' 	=> __( 'Primary', 'scn' ),
-					'success' 	=> __( 'Success', 'scn' ),
-					'info' 		=> __( 'Info', 'scn' ),
-					'warning' 	=> __( 'Warning', 'scn' ),
-					'danger' 	=> __( 'Danger', 'scn' ),
-					'secondary' => __( 'Secondary', 'scn' ),
-					'dark' 		=> __( 'Dark', 'scn' ),
-					'light' 	=> __( 'Light', 'scn' ),
-				),
-			) );
-
-			$cmb_options->add_field( array(
-				'name' => __( 'Policy Button Color', 'scn' ),
-				'desc' => __( 'Set the color for the Policy button.', 'scn' ),
-				'id'   => 'cookie_notice_btn_policy_color',
-				'type'             => 'select',
-				'show_option_none' => false,
-				'default'          => 'secondary',
-				'options'          => array(
-					'primary' 	=> __( 'Primary', 'scn' ),
-					'success' 	=> __( 'Success', 'scn' ),
-					'info' 		=> __( 'Info', 'scn' ),
-					'warning' 	=> __( 'Warning', 'scn' ),
-					'danger' 	=> __( 'Danger', 'scn' ),
-					'secondary' => __( 'Secondary', 'scn' ),
-					'dark' 		=> __( 'Dark', 'scn' ),
-					'light' 	=> __( 'Light', 'scn' ),
-				),
-			) );
-
 }
 
 /**

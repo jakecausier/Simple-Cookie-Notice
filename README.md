@@ -1,5 +1,5 @@
 # Simple Cookie Notice
-A WordPress plugin for showing a simple Bootstrap-styled cookie notice on your website or blog.
+A WordPress plugin for showing a simple cookie notice on your website or blog.
 
 ## Installation
 Download the project as a .zip and extract the folder into your `/wp-content/plugins` directory. It is advised that you remove the `-master` brance extension from the end of the folder for the plugin to work without problems.

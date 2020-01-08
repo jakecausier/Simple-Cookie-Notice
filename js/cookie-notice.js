@@ -1,16 +1,11 @@
-jQuery(document).ready(function(){
-
-    // If the 'accepted' cookie doesn't exist already, show the cookie notice. Otherwise, hide it.
+window.addEventListener('load', function() {
     if (document.cookie.replace(/(?:(?:^|.*;\s*)cookie-notice-seen\s*\=\s*([^;]*).*$)|^.*$/, "$1") !== "true") {
-        jQuery('#cookie-notice').show();
+        document.getElementById('cookie-notice').style.display = 'block';
     } else {
-        jQuery('#cookie-notice').hide();
-    };
-
-    // If the notice has been accepted, set the 'accepted' cookie and hide the notice.
-    jQuery('#cookie-notice-accept').click(function(){
+        document.getElementById('cookie-notice').remove();
+    }
+    document.getElementById('cookie-notice-accept').addEventListener('click', function() {
         document.cookie = "cookie-notice-seen=true; max-age=31536000";
-        jQuery('#cookie-notice').hide();
+        document.getElementById('cookie-notice').remove();
     });
-
-});
+}, false );
