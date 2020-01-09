@@ -20,13 +20,17 @@ function scn_init() {
 // Load the script for the cookie notice
 add_action( 'wp_enqueue_scripts', 'scn_load_script' );
 function scn_load_script() {
-    wp_enqueue_script('cookie-notice-js', plugins_url('/js/cookie-notice.min.js', __FILE__), false, false, true );
+    if ( scn_get_option('cookie_notice_enabled') == 'on' ) :
+        wp_enqueue_script('cookie-notice-js', plugins_url('/js/cookie-notice.min.js', __FILE__), false, false, true );
+    endif;
 }
 
 // Load the style for the cookie notice
 add_action( 'wp_enqueue_scripts', 'scn_load_style' );
 function scn_load_style() {
-    wp_enqueue_style('cookie-notice-css', plugins_url('/css/cookie-notice.min.css', __FILE__ ));
+    if ( scn_get_option('cookie_notice_enabled') == 'on' ) :
+        wp_enqueue_style('cookie-notice-css', plugins_url('/css/cookie-notice.min.css', __FILE__ ));
+    endif;
 }
 
 // Create the cookie notice function and add it to the WordPress footer
