@@ -5,7 +5,7 @@
     Description: Display a simple cookie notice message for users to accept or view your privacy and cookie info.
     Author: Jake Causier
     Author URI: https://github.com/jakecausier
-    Version: 0.5
+    Version: 0.6.0
     Text Domain: jakes-simple-cookie-notice
     License: GPLv3 - https://www.gnu.org/licenses/gpl.html
 */
