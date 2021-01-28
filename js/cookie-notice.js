@@ -6,7 +6,7 @@ window.addEventListener('load', function() {
     }
     if (document.getElementById('cookie-notice-accept')) {
         document.getElementById('cookie-notice-accept').addEventListener('click', function() {
-            document.cookie = "cookie-notice-seen=true; max-age=31536000";
+            document.cookie = "cookie-notice-seen=true; max-age=31536000; path=/;";
             document.getElementById('cookie-notice').remove();
         });
     }
