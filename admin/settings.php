@@ -66,6 +66,13 @@ function scn_cookie_notice_settings_metabox()
                 'type'    => 'text_url',
             ) );
 
+            $cmb_options->add_field( array(
+                'name' => __( 'Wrap content in container?', 'scn' ),
+                'desc' => __( '<p>When enabled, content will be wrapped in a container as not to touch the edges of the screen. Useful to avoid conflicts with elements that attach to the screen edge.</p>', 'scn' ),
+                'id'   => 'cookie_notice_use_container',
+                'type' => 'checkbox',
+            ) );
+
         $cmb_options->add_field( array(
         	'name' => 'Style',
         	'desc' => 'Change these settings to match your site theme.',

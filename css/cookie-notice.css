@@ -8,6 +8,9 @@
   width: 100%;
   height: auto;
 }
+#cookie-notice .scn-wrapper-container {
+  margin: 0 auto;
+}
 #cookie-notice p {
   margin: 0;
   padding: 0;
@@ -34,6 +37,7 @@
   cursor: pointer;
   margin: 0 0.5rem;
   padding: 0.5rem 0.75rem;
+  white-space: nowrap;
   background-color: #FFFFFF;
   color: #000000;
   transition: all 150ms;
@@ -42,6 +46,27 @@
 #cookie-notice .scn-container .scn-btn:focus {
   background-color: #EEEEEE;
   transition: all 150ms;
+}
+@media only screen and (min-width: 768px) {
+  #cookie-notice .scn-wrapper-container {
+    padding: 0 1rem;
+    max-width: 640px;
+  }
+}
+@media only screen and (min-width: 896px) {
+  #cookie-notice .scn-wrapper-container {
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 1152px) {
+  #cookie-notice .scn-wrapper-container {
+    max-width: 1024px;
+  }
+}
+@media only screen and (min-width: 1408px) {
+  #cookie-notice .scn-wrapper-container {
+    max-width: 1280px;
+  }
 }
 @media only screen and (max-width: 1023px) {
   #cookie-notice .scn-container {
